@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Roll from '../roll/RollPage';
+import FrameResult from '../frameResult/FrameResultPage';
 
 class Frame extends PureComponent {
     static propTypes = {
@@ -17,18 +18,24 @@ class Frame extends PureComponent {
                 <div className="frame-rolls">
                     {
                         this.props.frame.frameScore.map((score, index) => {
-                            let frameScore = this.props.frame.frameScore.reduce((total,cv) => {return total + cv}, 0);
+                            let scores = this.props.frame.frameScore.slice(0);
+                            if(scores.length > 2) {
+                                scores.pop();
+                            }
+
+                            let frameScore = scores.reduce((total,cv) => {return total + cv}, 0);
 
                             return <Roll
                                 key={index}
                                 score={score}
-                                isStrike={index === 0 && score === 10}
-                                isSpare={index !== 0 && frameScore === 10 && score !== null}
+                                isStrike={(index === 0 || this.props.frameNumber === 10) && score === 10}
+                                isSpare={index === 1 && frameScore === 10 && score !== null}
                                 isActive={this.props.frame.activeRoll === index && this.props.isActive}
                             />
                         })
                     }
                 </div>
+                <FrameResult result={this.props.frame.result} />
             </div>
         );
     }

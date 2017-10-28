@@ -23,7 +23,7 @@ class PlayerFramesContainer extends Component {
                 {this.props.players.map((playerFrames, index) => {
                     return <PlayerFrames
                         key={index}
-                        isActive={this.props.activePlayer === index}
+                        isActive={this.props.activePlayer === index || this.props.activeFrame > 9}
                         activeFrame={this.props.activeFrame}
                         playerFrames={playerFrames}/>
                 })

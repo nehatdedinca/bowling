@@ -42,7 +42,8 @@ class ControlBarContainer extends Component {
                 // supporting last frame
                 if(nextProps.activeFrame.get('frameScore').size === 3) {
                     pinsRemained = nextProps.activeFrame.getIn(['frameScore',0]) === 10 ||
-                    nextProps.activeFrame.getIn(['frameScore',1]) === 10 ? 10 : pinsRemained;
+                        nextProps.activeFrame.getIn(['frameScore',1]) === 10 ||
+                        nextProps.activeFrame.get('result') === 10 ? 10 : pinsRemained;
                 }
 
                 this.setState({
@@ -55,6 +56,7 @@ class ControlBarContainer extends Component {
             }
         } else {
             this.setState({
+                maxPins: 10,
                 finished: true
             });
         }
