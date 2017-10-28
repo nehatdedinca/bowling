@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import './roll.scss';
+import './roll.scss';
 
 class Roll extends PureComponent {
     static propTypes = {

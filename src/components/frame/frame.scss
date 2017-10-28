@@ -1,0 +1,21 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.frame {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  height: 6rem;
+  font-size: $size-font-big;
+  text-align: center;
+
+  .frame-header {
+    height: 1.5rem;
+    line-height: 1.5rem;
+  }
+
+  .frame-rolls {
+    display: flex;
+    height: 2rem;
+  }
+}

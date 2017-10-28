@@ -2,6 +2,7 @@ import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Roll from '../roll/RollPage';
 import FrameResult from '../frameResult/FrameResultPage';
+import './frame.scss';
 
 class Frame extends PureComponent {
     static propTypes = {

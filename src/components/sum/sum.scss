@@ -1,0 +1,23 @@
+@import '../../styles/colors';
+
+.frames-sum {
+  background-color: #fff;
+  border: 1px solid $color-blue;
+  display: flex;
+  flex: 1;
+  margin: 0.1rem 0.1rem 0.1rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+
+  height: 2rem;
+}
+
+.overall-sum {
+  background-color: #fff;
+  border: 1px solid $color-blue;
+  display: flex;
+  height: 2rem;
+  margin: 0.1rem 0.1rem 0.2rem 0.5rem;
+  justify-content: center;
+  align-items: center;
+}

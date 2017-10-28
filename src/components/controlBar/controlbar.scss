@@ -1,0 +1,53 @@
+@import '../../styles/colors';
+@import '../../styles/sizes';
+
+.controlbar {
+  background-color: $color-light-blue;
+  border: 1px solid $color-blue;
+  font-size: $size-font-normal;
+  height: 4rem;
+  position: relative;
+
+  .inner {
+    height: 2.5rem;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 20rem;
+  }
+
+  .button {
+    background-color: #fff;
+    border: 1px solid $color-blue;
+    display: inline-block;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+
+    &:hover {
+      background-color: $color-dark-blue;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
+  .score-control {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+
+    .score-input {
+      box-shadow: 0 0 2px $color-dark-blue inset;
+      border: 1px solid $color-dark-blue;
+      font-size: $size-font-normal;
+      height: 2.5rem;
+      width: 3rem;
+      text-align: center;
+      margin: 0 1rem 0 0;
+      padding: 0;
+    }
+  }
+}
