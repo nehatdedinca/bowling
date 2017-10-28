@@ -1,7 +1,7 @@
 {
   "name": "redux-starter",
   "version": "1.0.0",
-  "description": "Starter kit for React and Redux application by Nehat DeDinca",
+  "description": "React and Redux application by Nehat DeDinca",
   "scripts": {
     "prestart": "babel-node tools/startMessage.js",
     "start": "npm-run-all --parallel open:src lint:watch test:watch",
