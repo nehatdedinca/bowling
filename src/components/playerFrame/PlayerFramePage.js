@@ -1,6 +1,7 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
 import Sum from '../sum/SumPage';
+import './player-frames.scss';
 
 class PlayerFrames extends PureComponent {
     static propTypes = {

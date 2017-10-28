@@ -1,0 +1,14 @@
+@import '../../styles/colors';
+
+.player-frames {
+  background-color: $color-light-blue;
+  border: 1px solid $color-dark-blue;
+  margin: 1rem 0;
+  padding: 0.1rem;
+  display: flex;
+  opacity: 0.7;
+
+  &--active {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,16 @@
+@import '../../styles/colors';
+
+.roll {
+  background-color: $color-bg;
+  border: 1px solid $color-blue;
+  display: flex;
+  flex: 1;
+  margin: 0.1rem;
+  justify-content: center;
+  align-items: center;
+
+  &--active {
+    border: 1px solid $color-red;
+    background-color: #fff;
+  }
+}

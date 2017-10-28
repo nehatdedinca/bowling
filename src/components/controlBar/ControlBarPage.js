@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import './controlbar.scss';
 
 class ControlBar extends PureComponent {
     static propTypes = {

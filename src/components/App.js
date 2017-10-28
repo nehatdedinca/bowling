@@ -4,7 +4,7 @@ import Header from "./common/Header";
 import PlayerFrameContainer from "../../tools/playerFramesContainer";
 import ControlBarContainer from "../../tools/controlBarContainer";
 import DevTools from "../../tools/devTools";
-
+import './app.scss';
 
 class App extends React.Component {
     render() {

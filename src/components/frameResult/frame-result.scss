@@ -1,0 +1,11 @@
+@import '../../styles/colors';
+
+.frame-result {
+  background-color: #fff;
+  border: 1px solid $color-blue;
+  display: flex;
+  height: 2rem;
+  margin: 0.2rem 0.1rem 0.1rem;
+  justify-content: center;
+  align-items: center;
+}

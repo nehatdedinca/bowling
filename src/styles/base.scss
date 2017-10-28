@@ -1,0 +1,14 @@
+@import '_sizes';
+@import '_colors';
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: $size-font-normal;
+}
+
+body {
+  background-color: $color-bg;
+  color: $color-dark-grey;
+  margin: 0;
+  padding: 0;
+}
