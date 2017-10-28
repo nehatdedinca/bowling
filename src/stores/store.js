@@ -2,14 +2,24 @@ import {fromJS} from 'immutable';
 import {createStore, applyMiddleware, compose} from 'redux';
 import thunkMiddleware from 'redux-thunk';
 import createReducer from '../reducers/index';
+import DevTools from "../../tools/devTools";
  
 export default function configureStore(initialState = {}) {
  
+    let enhancer;
     const reducer = createReducer();
     const middleWares = [thunkMiddleware];
-    const enhancer = compose(
-        applyMiddleware(...middleWares)
-    );
+
+    if (__DEV__) {
+        enhancer = compose(
+                applyMiddleware(...middleWares),
+                DevTools.instrument()
+            );
+        } else {
+            enhancer = compose(
+            applyMiddleware(...middleWares)
+        );
+    }
 
     const store = createStore(
        reducer,
