@@ -1,5 +1,6 @@
 import React, {PureComponent} from 'react';
 import PropTypes from 'prop-types';
+import Sum from '../sum/SumPage';
 
 class PlayerFrames extends PureComponent {
     static propTypes = {
@@ -20,6 +21,7 @@ class PlayerFrames extends PureComponent {
                                 frame={frame}/>
                     })
                 }
+                <Sum frames={this.props.playerFrames} />
             </div>
         )
     }
