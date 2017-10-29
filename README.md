@@ -1,8 +1,8 @@
 ## Installation ##
   
 ```
-git clone https://github.com/ptrhoffmann/babbel-bowling.git
-cd babbel-bowling
+git clone https://github.com/nehatdedinca/bowling.git
+cd bowling
 npm install
 ```
 
@@ -32,11 +32,11 @@ Just try it out by running the application in dev mode and change styles or js-c
 ## Usage ##
 
 Pressing the 'Add Player'-button: 
-- a new PlayerFrame will be added into the DOM.  
+- A new PlayerFrame will be added into the DOM.  
 
 Pressing the 'Roll'-button: 
-- random rolls will be generated when the input field is left blank.
-- some simple validation will prevent users from wrong inputs, f.e. for the second roll only the maximum of available pins can be rolled (f.e first roll 7 -> maximum for second roll is 3, bigger inputs will be reduced)
+- Random rolls will be generated when the input field is left blank.
+- Some simple validation will prevent users from wrong inputs, f.e. for the second roll only the maximum of available pins can be rolled (f.e first roll 7 -> maximum for second roll is 3, bigger inputs will be reduced)
 
 ## Next Steps ##
 
